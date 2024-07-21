@@ -4,22 +4,23 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorService {
-    public double plus(double a, double b) {
+    public int plus(int a, int b) {
         return a + b;
     }
 
-    public double minus(double a, double b) {
+    public int minus(int a, int b) {
         return a - b;
     }
 
-    public double multiply(double a, double b) {
+    public int multiply(int a, int b) {
         return a * b;
     }
 
-    public double divide(double a, double b) {
+    public int divide(int a, int b) {
         if (b == 0) {
             throw new IllegalArgumentException("На ноль делить нельзя");
         }
         return a / b;
     }
+
 }
